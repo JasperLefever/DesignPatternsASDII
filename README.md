@@ -1,2 +1,3 @@
-# DesignPatternsASDII
-Design Patterns samenvatting ASDII
+# DesignPatterns ASD II
+
+## [Factory Patterns](./Factory/Factory.md)
