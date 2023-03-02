@@ -1,5 +1,11 @@
 # DesignPatterns ASD II
 
-## [Factory Patterns](./Factory/Factory.md)
+## [Factory Patterns](./Factory/Factory.md) TODO
 
-## [Adapter Pattern](./Adapter/Adapter.md)
+## [Iterator](./Iterator/Iterator.md) TODO
+
+## [Composite](./Composite/Composite.md) TODO
+
+## [Adapter Pattern](./Adapter/Adapter.md) TODO
+
+## [Builder](./Builder/Builder.md) TODO

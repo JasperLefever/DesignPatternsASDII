@@ -10,9 +10,11 @@
 
 ### Oplossing - Algemeen
 
-1. We maken een interface met een bepaald gedrag (behaviour/strategy).
+1. Maak een factory interface, deze bevat een methode(s) die een object(en) van een bepaald type teruggeeft
+2. Maak een concrete factory die de interface implementeert
 
-   ![Strategy](Strategy.png)
+> Creator = factory
+   ![img.png](img.png)
 
 ### Voorbeeld Vervolg
 
