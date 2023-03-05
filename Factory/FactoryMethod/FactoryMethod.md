@@ -2,7 +2,9 @@
 
 ### Probleem
 
-Het fundamentele probleem van het Simple Factory Pattern is dat het een statische methode is. Dit betekent dat je niet kan overerven van de factory. Dit is een probleem als je bijvoorbeeld een nieuwe vorm wil toevoegen. Je moet dan de factory aanpassen. Dit is niet wenselijk.
+Het fundamentele probleem van het Simple Factory Pattern is dat het een statische methode is. Dit betekent dat je niet
+kan overerven van de factory. Dit is een probleem als je bijvoorbeeld een nieuwe vorm wil toevoegen. Je moet dan de
+factory aanpassen. Dit is niet wenselijk.
 Het Factory Method Pattern zorgt ervoor dat je makkelijker producten kan toevoegen zonder de factory aan te passen.
 
 ### Voorbeeld
@@ -14,11 +16,12 @@ Je wilt op een gegeven moment een nieuwe burger toevoegen. Je moet dan de factor
 
 1. Maak een interface voor de producten
 2. Maak een concrete product klasse die de interface implementeert
-3. Maak een abstracte factory class, deze bevat een abstracte methode(s) die een object(en) van een bepaald type teruggeeft
+3. Maak een abstracte factory class, deze bevat een abstracte methode(s) die een object(en) van een bepaald type
+   teruggeeft
 4. Maak een/meerdere concrete factory(s) die de interface implementeert
 
 > **Creator = factory**
-   ![img.png](img.png)
+![img.png](img.png)
 
 ### Voorbeeld Vervolg
 
@@ -90,11 +93,11 @@ Je wilt op een gegeven moment een nieuwe burger toevoegen. Je moet dan de factor
         }
     }
     ```
-    Output:
+   Output:
     ```
     Hamburger is prepared
     ```
-    >>Restaurant is in het voorbeeld hierboven de BurgerFactory
+   > > Restaurant is in het voorbeeld hierboven de BurgerFactory
    ![img_1.png](img_1.png)
 
 # [TERUG NAAR INHOUDSOPGAVE](../../README.md)

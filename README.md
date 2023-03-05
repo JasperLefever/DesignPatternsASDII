@@ -6,6 +6,6 @@
 
 ## [Composite](./Composite/Composite.md) TODO
 
-## [Adapter Pattern](./Adapter/Adapter.md) TODO
+## [Builder](./Builder/Builder.md)
 
-## [Builder](./Builder/Builder.md) TODO
+## [Adapter Pattern](./Adapter/Adapter.md) TODO
