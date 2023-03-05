@@ -1,6 +1,6 @@
 # DesignPatterns ASD II
 
-## [Factory Patterns](./Factory/Factory.md) TODO
+## [Factory Patterns](./Factory/Factory.md)
 
 ## [Iterator](./Iterator/Iterator.md) TODO
 
