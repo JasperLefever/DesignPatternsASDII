@@ -4,7 +4,7 @@
 
 - Link naar ASD I samenvatting
 
-## [Factory Method](./FactoryMethod/FactoryMethod.md) TODO
+## [Factory Method](./FactoryMethod/FactoryMethod.md)
 
 ## [Abstract Factory](./AbstractFactory/AbstractFactory.md)
 
