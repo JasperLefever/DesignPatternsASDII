@@ -24,11 +24,11 @@ Hier zijn Win en Mac de families van gerelateerde objecten.
 Button en Label zijn de objecten/producten die je nodig hebt.
 
 - Win
-  - WinButton
-  - WinLabel
+    - WinButton
+    - WinLabel
 - Mac
-  - MacButton
-  - MacLabel
+    - MacButton
+    - MacLabel
 
 ### Oplossing - Algemeen
 
@@ -48,7 +48,8 @@ _NOTE: Kan zijn dat er meerdere verschillende abstract factories zijn._
 
 > stappen komen overeen met de stappen in de algemene oplossing
 
-1.  - Family: Win, Mac
+1.
+    - Family: Win, Mac
     - Objecten: Button, Label
 2.
 
@@ -199,4 +200,4 @@ Output:
 > In cursus hebben ze ook een abstractie gemaakt bij de ScreenFactory. Klein verschil
 > ![img_1.png](img_1.png)
 
-# [TERUG NAAR INHOUDSOPGAVE](../README.md)
+# [TERUG NAAR INHOUDSOPGAVE](../../README.md)
