@@ -21,19 +21,19 @@ het Builder Design Pattern.
 ### Oplossing - Algemeen zonder inner class
 
 1. Maak een interface voor de Builder
-   - Een method voor elk onderdeel van het product
-   - Een method om het product te returnen
-   - build() method om het product te maken
-   - heeft product als property
+    - Een method voor elk onderdeel van het product
+    - Een method om het product te returnen
+    - build() method om het product te maken
+    - heeft product als property
 2. Maak een class voor het product, deze bevat alle properties die nodig zijn om het product te maken + getters en
    setters
-   - bv. Huis
-      - Zwembad, badkamer, keuken, ...
+    - bv. Huis
+        - Zwembad, badkamer, keuken, ...
 3. Maak een class voor de concrete builder ze implementeert de interface van de builder.
 4. Maak een class voor de director
-   - Heeft constructor met de builder als parameter
-   - Heeft een method die de builder aanroept om het product te maken
-   - Heeft **getProduct** method om het product te returnen
+    - Heeft constructor met de builder als parameter
+    - Heeft een method die de builder aanroept om het product te maken
+    - Heeft **getProduct** method om het product te returnen
 
 ![img.png](img.png)
 
@@ -224,9 +224,9 @@ het Builder Design Pattern.
 
 1. Maak een class voor het product, deze bevat alle properties die nodig zijn om het product te maken + getters en
    setters
-   - bv. Huis
-      - Zwembad, badkamer, keuken, ...
-   - Maak een private constructor met builder als parameter
+    - bv. Huis
+        - Zwembad, badkamer, keuken, ...
+    - Maak een private constructor met builder als parameter
 2. Maak een inner class voor de builder
 
 ### Voorbeeld Vervolg - Algemeen met inner class
