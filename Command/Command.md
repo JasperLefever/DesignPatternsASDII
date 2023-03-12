@@ -174,3 +174,160 @@ verhogen of verlagen van het volume, het afspelen van een dvd, enzovoort.
 > je kan ook macro commando's maken, die een lijst van commando's uitvoeren
 
 # [TERUG NAAR INHOUDSOPGAVE](../README.md)
+
+PS: ChatGPT voorbeeldje mss beetje beter kdenk da het volledig is
+
+```java
+// Receiver class
+public class Light {
+    private int id;
+    private boolean isOn;
+
+    public Light(int id) {
+        this.id = id;
+        this.isOn = false;
+    }
+
+    public void turnOn() {
+        this.isOn = true;
+        System.out.println("Light " + id + " is turned on");
+    }
+
+    public void turnOff() {
+        this.isOn = false;
+        System.out.println("Light " + id + " is turned off");
+    }
+
+    public boolean isOn() {
+        return isOn;
+    }
+}
+
+// Command interface
+public interface Command {
+    void execute();
+    void undo();
+}
+
+// Concrete command classes
+public class TurnOnCommand implements Command {
+    private Light light;
+
+    public TurnOnCommand(Light light) {
+        this.light = light;
+    }
+
+    public void execute() {
+        light.turnOn();
+    }
+
+    public void undo() {
+        light.turnOff();
+    }
+}
+
+public class TurnOffCommand implements Command {
+    private Light light;
+
+    public TurnOffCommand(Light light) {
+        this.light = light;
+    }
+
+    public void execute() {
+        light.turnOff();
+    }
+
+    public void undo() {
+        light.turnOn();
+    }
+}
+
+public class MacroCommand implements Command {
+    private Command[] commands;
+
+    public MacroCommand(Command[] commands) {
+        this.commands = commands;
+    }
+
+    public void execute() {
+        for (Command command : commands) {
+            command.execute();
+        }
+    }
+
+    public void undo() {
+        for (Command command : commands) {
+            command.undo();
+        }
+    }
+}
+
+// Invoker class
+public class RemoteControl {
+    private Command[] onCommands;
+    private Command[] offCommands;
+    private Command undoCommand;
+
+    public RemoteControl(int numLights) {
+        onCommands = new Command[numLights];
+        offCommands = new Command[numLights];
+
+        Command noCommand = new NoCommand();
+        for (int i = 0; i < numLights; i++) {
+            onCommands[i] = noCommand;
+            offCommands[i] = noCommand;
+        }
+        undoCommand = noCommand;
+    }
+
+    public void setCommand(int slot, Command onCommand, Command offCommand) {
+        onCommands[slot] = onCommand;
+        offCommands[slot] = offCommand;
+    }
+
+    public void pressOnButton(int slot) {
+        onCommands[slot].execute();
+        undoCommand = onCommands[slot];
+    }
+
+    public void pressOffButton(int slot) {
+        offCommands[slot].execute();
+        undoCommand = offCommands[slot];
+    }
+
+    public void pressUndoButton() {
+        undoCommand.undo();
+    }
+}
+
+// Client code
+public class Client {
+    public static void main(String[] args) {
+        Light light1 = new Light(1);
+        Light light2 = new Light(2);
+        Light light3 = new Light(3);
+
+        RemoteControl remoteControl = new RemoteControl(3);
+
+        Command light1OnCommand = new TurnOnCommand(light1);
+        Command light1OffCommand = new TurnOffCommand(light1);
+
+        Command light2OnCommand = new TurnOnCommand(light2);
+        Command light2OffCommand = new TurnOffCommand(light2);
+
+        Command light3OnCommand = new TurnOnCommand(light3);
+        Command light3OffCommand = new TurnOffCommand(light3);
+
+        Command[] allLightsOnCommands = {light1OnCommand, light2OnCommand, light3OnCommand};
+        Command allLightsOnMacroCommand = new MacroCommand(allLightsOnCommands);
+
+        remoteControl.setCommand(0, allLightsOnMacroCommand, new UndoCommand(allLightsOnMacroCommand));
+        remoteControl.setCommand(1, light1OnCommand, light1OffCommand);
+        remoteControl.setCommand(2, light2OnCommand, light2OffCommand);
+        remoteControl.setCommand(3, light3OnCommand, light3OffCommand);
+        
+        remoteControl.pressOnButton(0);  // Turns on all lights
+        remoteControl.pressOffButton(1); // Turns off light 1
+        remoteControl.pressUndoButton(); // Undo all lights on command
+    }
+```
