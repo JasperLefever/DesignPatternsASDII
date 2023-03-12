@@ -10,4 +10,4 @@
 
 ## [Adapter Pattern](./Adapter/Adapter.md) TODO
 
-## [Command Pattern](./Command/Command.md) TODO
+## [Command Pattern](./Command/Command.md) KINDA DONE :shrug:
