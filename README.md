@@ -10,4 +10,8 @@
 
 ## [Adapter Pattern](./Adapter/Adapter.md) TODO
 
-## [Command Pattern](./Command/Command.md) KINDA DONE :shrug:
+## [Command Pattern](./Command/Command.md)
+
+## [Template Method Pattern](./TemplateMethod/TemplateMethod.md) TODO
+
+## [Proxy Pattern](./Proxy/Proxy.md) TODO
