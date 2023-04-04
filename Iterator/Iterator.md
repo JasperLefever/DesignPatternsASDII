@@ -51,4 +51,67 @@ voor verschillende soorten verzamelingen.
 
 > stappen komen overeen met de stappen in de algemene oplossing
 
+1. ```java
+   public interface Iterator {
+       boolean hasNext();
+       Object next();
+       void remove();
+   }
+   ```
+
+2. ```java
+   public class ClientIterator implements Iterator {
+       private Client[] clients;
+       private int position = 0;
+   
+       public ClientIterator(Client[] clients) {
+           this.clients = clients;
+       }
+   
+       @Override
+       public boolean hasNext() {
+           return position < clients.length && clients[position] != null;
+       }
+   
+       @Override
+       public Object next() {
+           return clients[position++];
+       }
+   
+       @Override
+       public void remove() {
+           if (position <= 0) {
+               throw new IllegalStateException("You can't remove an item until you've done at least one next()");
+           }
+           if (clients[position - 1] != null) {
+               for (int i = position - 1; i < (clients.length - 1); i++) {
+                   clients[i] = clients[i + 1];
+               }
+               clients[clients.length - 1] = null;
+           }
+       }
+   }
+   ```
+
+3. ```java
+    public interface Aggregate {
+         Iterator createIterator();
+    }
+    ```
+
+4. ```java
+    public class ClientAggregate implements Aggregate {
+         private Client[] clients;
+    
+         public ClientAggregate(Client[] clients) {
+              this.clients = clients;
+         }
+    
+         @Override
+         public Iterator createIterator() {
+              return new ClientIterator(clients);
+         }
+    }
+    ```
+
 # [TERUG NAAR INHOUDSOPGAVE](../README.md)
