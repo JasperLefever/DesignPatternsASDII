@@ -8,7 +8,7 @@
 
 ## [Builder](./Builder/Builder.md)
 
-## [Adapter Pattern](./Adapter/Adapter.md) TODO
+## [Adapter Pattern](./Adapter/Adapter.md)
 
 ## [Command Pattern](./Command/Command.md)
 
