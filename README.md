@@ -4,7 +4,7 @@
 
 ## [Iterator](./Iterator/Iterator.md) TODO
 
-## [Composite](./Composite/Composite.md) TODO
+## [Composite](./Composite/Composite.md)
 
 ## [Builder](./Builder/Builder.md)
 
