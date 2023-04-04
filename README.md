@@ -2,7 +2,7 @@
 
 ## [Factory Patterns](./Factory/Factory.md)
 
-## [Iterator](./Iterator/Iterator.md) TODO
+## [Iterator](./Iterator/Iterator.md)
 
 ## [Composite](./Composite/Composite.md)
 
