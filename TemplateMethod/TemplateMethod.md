@@ -31,12 +31,16 @@ om de stappen van het algoritme te definiëren en de implementatie van elke stap
 ### Oplossing
 
 1. Definieer een abstracte klasse
-    - Template methode die de stappen van het algoritme definieert
-    - Concrete methoden die de stappen van het algoritme implementeren
-    - Hook methoden die de stappen van het algoritme implementeren
+   - Template methode die de stappen van het algoritme definieert
+   - Concrete methoden die de stappen van het algoritme implementeren
+   - Hook methoden die de stappen van het algoritme implementeren
 2. Definieer een concrete klasse
-    - Implementeer de concrete methoden
-    - Implementeer de hook methoden
+   - Implementeer de concrete methoden
+   - Implementeer de hook methoden
+
+> Hooks
+> ![img_3.png](img_3.png)
+> hierop kun je een if statement zetten om te kijken of je de hook wilt uitvoeren of niet
 
 ![img_1.png](img_1.png)
 ![img_2.png](img_2.png)
