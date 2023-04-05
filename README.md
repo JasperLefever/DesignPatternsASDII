@@ -12,6 +12,6 @@
 
 ## [Command Pattern](./Command/Command.md)
 
-## [Template Method Pattern](./TemplateMethod/TemplateMethod.md) TODO
+## [Template Method Pattern](./TemplateMethod/TemplateMethod.md)
 
 ## [Proxy Pattern](./Proxy/Proxy.md) TODO
