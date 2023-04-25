@@ -59,6 +59,7 @@ het Builder Design Pattern.
          void setBathroom();
          void setKitchen();
          void setBedroom();
+   }
    ```
 2. ```java
     public class Huis {
