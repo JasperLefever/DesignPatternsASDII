@@ -13,7 +13,7 @@ die een kalkoen kan laten doen alsof het een eend is.
 
 1. Maak een interface die de client verwacht
 2. Maak een adapter die de interface implementeert
-    - De addapter koppelt de methodes van de interface aan de methodes van de adaptee
+    - De adapter koppelt de methodes van de interface aan de methodes van de adaptee
 3. Maak een adaptee die de interface niet implementeert
 
 ![img.png](img.png)
