@@ -117,8 +117,8 @@ verhogen of verlagen van het volume, het afspelen van een dvd, enzovoort.
 
 4. ```java
     public class RemoteControl {
-    private Command[] onCommands;
-    private Command[] offCommands;
+        private Command[] onCommands;
+        private Command[] offCommands;
     
         public RemoteControl(int numLights) {
             onCommands = new Command[numLights];
