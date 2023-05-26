@@ -10,7 +10,7 @@ Het Factory Method Pattern zorgt ervoor dat je makkelijker producten kan toevoeg
 ### Voorbeeld
 
 Stel je hebt een burger restaurant. Je hebt dan verschillende soorten burgers op het menu.
-Je wilt op een gegeven moment een nieuwe burger toevoegen. Je moet dan de factory aanpassen. Dit is ideaal.
+Je wilt op een gegeven moment een nieuwe burger toevoegen. Je moet dan de factory aanpassen. Dit is niet ideaal.
 
 ### Oplossing - Algemeen
 
