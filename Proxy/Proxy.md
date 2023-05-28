@@ -83,8 +83,6 @@ classDiagram
 
 ### Voorbeeld Vervolg
 
-> stappen komen overeen met de stappen in de algemene oplossing
-
 1. ```java
    public interface Image {
        void display();
