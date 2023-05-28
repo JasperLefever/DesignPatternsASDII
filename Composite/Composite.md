@@ -12,7 +12,7 @@ objecten. Het composite pattern zorgt ervoor dat je deze collecties en objecten 
 > 'An order might comprise various products, packaged in boxes, which are packaged in bigger boxes and so on. The whole
 > structure looks like an upside down tree.'
 
-Hieruit wil je dan bc de prijs berekenen
+Hieruit wil je dan bv de prijs berekenen
 
 ### Oplossing
 
