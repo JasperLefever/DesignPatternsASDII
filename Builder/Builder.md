@@ -38,6 +38,7 @@ het Builder Design Pattern.
 
 ```mermaid
 classDiagram
+   direction RL
    class Builder {
       <<abstract>>
       + void setX()
