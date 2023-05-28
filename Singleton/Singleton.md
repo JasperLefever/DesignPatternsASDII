@@ -142,4 +142,32 @@ public class ChocolateBoiler {
 }
 ```
 
+> voorbeeld logger
+
+```java
+public class Logger {
+    private static Logger instance;
+    private String logMessage;
+
+    private Logger() {
+        // Private constructor
+    }
+
+    public static Logger getInstance() {
+        if (instance == null) {
+            instance = new Logger();
+        }
+        return instance;
+    }
+
+    public void log(String message) {
+        logMessage += message + "\n";
+    }
+
+    public void printLog() {
+        System.out.println(logMessage);
+    }
+}
+```
+
 ```java
