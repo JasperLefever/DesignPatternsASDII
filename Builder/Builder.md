@@ -20,20 +20,20 @@ het Builder Design Pattern.
 
 ### Oplossing - Algemeen zonder inner class
 
-1. Maak een interface voor de Builder
-    - Een method voor elk onderdeel van het product
-    - Een method om het product te returnen
-    - build() method om het product te maken
-    - heeft product als property
+1. Maak een abstract class voor de Builder
+   - Een method voor elk onderdeel van het product
+   - Een method om het product te returnen
+   - build() method om het product te maken
+   - heeft product als property
 2. Maak een class voor het product, deze bevat alle properties die nodig zijn om het product te maken + getters en
    setters
-    - bv. Huis
-        - Zwembad, badkamer, keuken, ...
-3. Maak een class voor de concrete builder ze implementeert de interface van de builder.
+   - bv. Huis
+      - Zwembad, badkamer, keuken, ...
+3. Maak een class voor de concrete builder ze extends de abstract class van de builder.
 4. Maak een class voor de director
-    - Heeft constructor met de builder als parameter
-    - Heeft een method die de builder aanroept om het product te maken
-    - Heeft **getProduct** method om het product te returnen
+   - Heeft constructor met de builder als parameter
+   - Heeft een method die de builder aanroept om het product te maken
+   - Heeft **getProduct** method om het product te returnen
 
 ![img.png](img.png)
 
@@ -45,7 +45,7 @@ het Builder Design Pattern.
 > huizen met andere parameters
 
 1. ```java
-    public interface Builder {
+    abstract class Builder {
       
          private Huis huis;
 
@@ -143,7 +143,7 @@ het Builder Design Pattern.
     ```
 
 3. ```java
-    public class HuisBuilder implements Builder {
+    public class HuisBuilder extends Builder {
    
        private Huis huis;
    
