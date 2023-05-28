@@ -36,6 +36,39 @@ het Builder Design Pattern.
 
 ![img.png](img.png)
 
+```mermaid
+classDiagram
+   class Builder {
+      <<abstract>>
+      + void setX()
+      + void setY()
+      + void setZ()
+      + Product build()
+   }
+   class Product {
+      - int x
+      - int y
+      - int z
+      + Product()
+   }
+   class ConcreteBuilder {
+      +ConcreteBuilder()
+      +void setX()
+      +void setY()
+      +void setZ()
+      +Product build()
+   }
+   class Director {
+      -Builder builder
+      +Director(Builder builder)
+      +void buildProduct()
+      +Product getProduct()
+   }
+   Builder <|-- ConcreteBuilder
+   ConcreteBuilder o-- Product
+   Director o-- Builder
+```
+
 ### Voorbeeld Vervolg - Algemeen zonder inner class
 
 > stappen komen overeen met de stappen in de algemene oplossing
@@ -137,7 +170,6 @@ het Builder Design Pattern.
            public void setSlaapkamer(boolean slaapkamer) {
                this.slaapkamer = slaapkamer;
            }
-   
    }
     ```
 
