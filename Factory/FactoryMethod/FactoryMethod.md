@@ -14,8 +14,8 @@ Je wilt op een gegeven moment een nieuwe burger toevoegen. Je moet dan de factor
 
 ### Oplossing - Algemeen
 
-1. Maak een interface voor de producten
-2. Maak een concrete product klasse die de interface implementeert
+1. Maak een abstract class voor de producten
+2. Maak een concrete product klasse die de abstracte klasse implementeert
 3. Maak een abstracte factory class, deze bevat een abstracte methode(s) die een object(en) van een bepaald type
    teruggeeft
 4. Maak een/meerdere concrete factory(s) die de interface implementeert
