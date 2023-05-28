@@ -14,6 +14,6 @@
 
 ## [Template Method Pattern](./TemplateMethod/TemplateMethod.md)
 
-## [Proxy Pattern](./Proxy/Proxy.md) TODO
+## [Proxy Pattern](./Proxy/Proxy.md)
 
 ## [Singleton Pattern](./Singleton/Singleton.md)
