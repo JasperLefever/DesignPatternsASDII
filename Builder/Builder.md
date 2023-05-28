@@ -22,8 +22,7 @@ het Builder Design Pattern.
 
 1. Maak een abstract class voor de Builder
    - Een method voor elk onderdeel van het product
-   - Een method om het product te returnen
-   - build() method om het product te maken
+   - Een method om het product te returnen (zelfde als build method)
    - heeft product als property
 2. Maak een class voor het product, deze bevat alle properties die nodig zijn om het product te maken + getters en
    setters
