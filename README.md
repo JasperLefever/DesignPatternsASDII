@@ -17,3 +17,8 @@
 ## [Proxy Pattern](./Proxy/Proxy.md)
 
 ## [Singleton Pattern](./Singleton/Singleton.md)
+
+NOTES:
+
+* **interface** -> geen implementatie want elke methode wordt anders geimplementeerd
+* **abstract** -> paar gedeelde methodes ma ook paar waar implementatie anders is
